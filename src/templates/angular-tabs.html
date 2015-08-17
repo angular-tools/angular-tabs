@@ -1,0 +1,14 @@
+<div>
+    <div class="bs-docs-example">
+        <ul id="myTab" class="nav nav-tabs">
+            <li ng-repeat="tab in angularTabs" ng-class="{active: href == tab.href}"><a href="#{{tab.href}}">{{tab.label}}</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
