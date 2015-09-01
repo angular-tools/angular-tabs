@@ -1,0 +1,31 @@
+{
+  "name": "Angular tabs",
+  "authors": [
+    "minutephp <dev@minutephp.com>"
+  ],
+  "description": "Simple AngularJS plugin to create tabs using ngRouter",
+  "main": "src/js/angular-tabs.js",
+  "keywords": [
+    "angularjs",
+    "tts",
+    "text to speech"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.minutephp.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "d1f95fdea9",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "d1f95fdea99b4aa67fdb356830158414bb73686c"
+  },
+  "_source": "git://github.com/angular-tools/angular-tabs.git",
+  "_target": "*",
+  "_originalSource": "angular-tools/angular-tabs"
+}
