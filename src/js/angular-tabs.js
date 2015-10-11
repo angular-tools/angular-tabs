@@ -1,11 +1,7 @@
 (function () {
     'use strict';
 
-    var scripts = document.getElementsByTagName("script");
-    var currentScriptPath = scripts[scripts.length - 1].src;
-    var basePath = currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + '..';
     var routeProvider;
-
     var app = angular.module('angularTabs', ['ngRoute', 'oc.lazyLoad']);
 
     app.config(function ($routeProvider, $controllerProvider) {
@@ -18,7 +14,7 @@
             restrict: 'A',
             replace: true,
             scope: {angularTabs: "="},
-            templateUrl: basePath + '/templates/angular-tabs.html',
+            templateUrl: '/static/bower_components/angular-tabs/src/templates/angular-tabs.html',
             controller: function ($scope) {
                 $scope.$watch('angularTabs', function (tabs) {
                     if (tabs) {
