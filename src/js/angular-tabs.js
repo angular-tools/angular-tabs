@@ -16,6 +16,10 @@
             scope: {angularTabs: "="},
             templateUrl: '/static/bower_components/angular-tabs/src/templates/angular-tabs.html',
             controller: function ($scope) {
+                $scope.extend = function (init, data) {
+                    $minutephp.extend.call(this, this, init, data);
+                };
+
                 $scope.$watch('angularTabs', function (tabs) {
                     if (tabs) {
                         for (var i = tabs.length - 1; i >= 0; i--) {
